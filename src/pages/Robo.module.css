@@ -7,7 +7,7 @@ body{
   width : auto;
 }
 .homeScreen {
-  overflow-x: hidden;
+  
   position: relative;
   background: linear-gradient(
     212.78deg,
