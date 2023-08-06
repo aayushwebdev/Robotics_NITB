@@ -1,0 +1,79 @@
+.aboutUs1 {
+  position: relative;
+  line-height: 26px;
+}
+.aboutUsWrapper {
+  border-radius: 0 var(--br-10xl) 0 var(--br-10xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 20px 4px rgba(18, 203, 242, 0.2);
+  width: 331px;
+  height: 72px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding-70xl);
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: center;
+}
+.frameChild {
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-black);
+  box-shadow: 0 4px 20px 3px rgba(18, 203, 242, 0.4);
+  height: 736px;
+}
+.httpslottiefilescom134344Icon {
+  position: absolute;
+  margin: 0 !important;
+  top: 93px;
+  left: 160px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  z-index: 0;
+}
+.loremIpsumDolor {
+  position: absolute;
+  margin: 0 !important;
+  width: 82.45%;
+  top: 18.08%;
+  left: 8.33%;
+  line-height: 36.5px;
+  display: inline-block;
+  z-index: 1;
+}
+.httpslottiefilescom134344Parent {
+  flex: 1;
+  height: 686px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.aboutUs,
+.rectangleParent {
+  align-self: stretch;
+  height: 736px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-61xl);
+  font-size: var(--font-size-13xl);
+}
+.aboutUs {
+  height: 894px;
+  flex-direction: column;
+  padding: 0 var(--padding-63xl) var(--padding-8xs) var(--padding-58xl);
+  box-sizing: border-box;
+  gap: var(--gap-67xl);
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--font-franklin-gothic-medium);
+}

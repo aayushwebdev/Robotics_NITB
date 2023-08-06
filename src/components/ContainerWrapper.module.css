@@ -1,0 +1,107 @@
+.frameChild {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 336px;
+  height: 11px;
+}
+.eventName {
+  position: absolute;
+  top: 0;
+  left: 66px;
+  line-height: 26px;
+}
+.imageContainer,
+.vectorParent {
+  position: relative;
+  width: 336px;
+  height: 40px;
+}
+.imageContainer {
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 20px 3px rgba(18, 203, 242, 0.4);
+  width: 640px;
+  height: 360px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.gallery,
+.galleryPadding {
+  display: flex;
+  align-items: flex-start;
+}
+.gallery {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.galleryPadding {
+  width: 697px;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 0 0 var(--padding-5xl);
+  box-sizing: border-box;
+  justify-content: center;
+}
+.indicatorsChild,
+.indicatorsItem {
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-deepskyblue);
+  width: 8px;
+  height: 8px;
+}
+.indicatorsItem {
+  background-color: var(--color-white);
+}
+.indicators {
+  width: 327px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.carousel,
+.frameGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel {
+  width: 691px;
+  padding: var(--padding-base) 0;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.frameGroup {
+  flex: 1;
+  height: 525px;
+  justify-content: flex-start;
+  gap: var(--gap-26xl);
+}
+.loremIpsumDolor {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-21xl);
+  line-height: 72.5px;
+  display: inline-block;
+  height: 424px;
+}
+.frameParent {
+  align-self: stretch;
+  height: 525px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-57xl);
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-franklin-gothic-medium);
+}

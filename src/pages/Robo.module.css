@@ -1,0 +1,90 @@
+:root {
+Max-width:100%;
+}
+body{
+  overflow-x: hidden;
+  min-height:100vh;
+  width : auto;
+}
+.homeScreen {
+  overflow-x: hidden;
+  position: relative;
+  background: linear-gradient(
+    212.78deg,
+    #000f12,
+    #000e11 10.76%,
+    #001013 23.87%,
+    #01191d 45.3%,
+    #011114 67.13%,
+    #010b0c 87.13%,
+    #00191d 99.86%
+  );
+  width: 2000px;
+  height: 9634px;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+  flex-shrink: 0;
+  z-index: 0;
+}
+.ourTeam {
+  position: relative;
+  line-height: 26px;
+}
+.ourTeamWrapper {
+  border-radius: 0 var(--br-10xl) 0 var(--br-10xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 20px 4px rgba(18, 203, 242, 0.2);
+  width: 319px;
+  height: 72px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.frameChild {
+  align-self: stretch;
+  position: relative;
+  border-radius: 31px;
+  background-color: var(--color-black);
+  box-shadow: 4px 4px 20px 3px rgba(25, 161, 190, 0.6);
+  height: 953px;
+}
+.frameParent {
+  align-self: stretch;
+  height: 1111px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-67xl);
+}
+.frameParent,
+.homePageParent,
+.robo {
+  display: flex;
+  justify-content: flex-start;
+}
+.homePageParent {
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 61px;
+  width: 1776px;
+  height: 9579px;
+  flex-direction: column;
+  align-items: center;
+  gap: 140px;
+  z-index: 1;
+}
+.robo {
+  position: relative;
+  width: 100%;
+  height: 9634px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-3xs);
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--font-franklin-gothic-medium);
+}
