@@ -1,0 +1,161 @@
+/* .bg {
+    background: #000300;
+}
+    
+.achievement {
+    background : none;
+    margin: 8rem 12%;
+    padding: 2rem;
+    justify-content: center;
+    border: .7px solid rgba(255, 255,255, 0.4);
+    text-align: center;
+}
+
+.achievement h3 {
+    font-size: 2.8rem;
+    padding: 2rem 0;
+}
+
+.achievement_content {
+    display: flex;
+}
+
+.content1, .content2 {
+    padding: 0 2rem;
+    display: flex;
+}
+
+.content1 img, 
+.content2 img {
+    width: 30vw;
+}
+
+
+
+ */
+
+ .bg {
+    /* background: #000509 ; */
+    background: url(../../images/bg3.png);
+    background-size:cover;
+  }
+
+
+
+ .competition {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10rem 9% 10rem;
+}
+
+.competition h3 {
+    font-size: 2.8rem;
+}
+
+.competitionCard {
+    align-items: center;
+    background: none;
+    border-radius: 3rem;
+    padding: 5rem;
+    justify-content: center;
+    text-align: center;
+    border: .7px solid rgba(255, 255,255, 0.3); 
+}
+
+.competitionLayer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.competitionLayer .competitionImg img{
+    width: 40rem;
+    border-radius: 2rem;
+}
+
+.competitionLayer .competitionContent1 h5{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.competitionLayer .competitionContent2 h5{
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.competitionLayer .competitionContent1 p{
+    font-size: 1.2rem;
+}
+.competitionLayer .competitionContent2 p{
+    font-size: 1.2rem;
+}
+
+.competitionLayer .competitionContent1{
+    text-align: left;
+    padding-right: 3rem;
+}
+
+.competitionLayer .competitionContent2 {
+    text-align: right;
+    padding-left: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .competition {
+        padding: 10rem 6% 10rem;
+    }
+
+    .competition h3 {
+        font-size: 2rem;
+    }
+
+    .competitionCard {
+        padding: 2rem;
+    }
+
+    .competitionLayer .competitionImg img{
+        width: 30rem;
+    }
+
+    .competitionLayer {
+        display:inline-block;
+    }
+
+    .competitionLayer .competitionContent1 h5{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .competitionLayer .competitionContent2 h5{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .competitionLayer .competitionContent1 p{
+        font-size: 1rem;
+    }
+    .competitionLayer .competitionContent2 p{
+        font-size: 1rem;
+    }
+
+    .competitionLayer .competitionContent1{
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .competitionLayer .competitionContent2 {
+        text-align: center;
+        display: reverse-inline-block;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .competitionLayer .competitionImg img{
+        width: 20rem;
+        padding: 1rem;
+    }
+}

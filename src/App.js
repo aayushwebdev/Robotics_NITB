@@ -1,52 +1,26 @@
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
-import Robo from "./pages/Robo";
-import { useEffect } from "react";
+import React from 'react';
+import './App.css';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Social from './components/social/Social';
+import Event from './components/events/Events';
+import Projects from './components/Projects/Project';
+import Achievement from './components/achievements/Achievements'
+import Footer from './components/footer/Footer';
 
-function App() {
-  const action = useNavigationType();
-  const location = useLocation();
-  const pathname = location.pathname;
-
-  useEffect(() => {
-    if (action !== "POP") {
-      window.scrollTo(0, 0);
-    }
-  }, [action, pathname]);
-
-  useEffect(() => {
-    let title = "";
-    let metaDescription = "";
-
-    switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
-        break;
-    }
-
-    if (title) {
-      document.title = title;
-    }
-
-    if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = metaDescription;
-      }
-    }
-  }, [pathname]);
-
+const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Robo />} />
-    </Routes>
+    <>
+    
+      <Social />
+      <Home />
+      <About />
+      {/* <Event /> */}
+      <Projects />
+      <Achievement />
+      <Footer />
+    </>
   );
-}
+};
+
 export default App;

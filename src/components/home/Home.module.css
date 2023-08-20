@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@100;200;400;700&display=swap");
+
+.home {
+    min-height: 100vh;
+    padding: 2rem 9% 2rem;
+    justify-content: center;
+    text-align:center;
+    /* font-family: 'Goldman', cursive; */
+    /* background-color: #000300; */
+    background: url(../../images/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+header {
+    width: 100%;
+    overflow-y: hidden;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: .2px solid rgba(255, 255, 255, 0.1);
+    padding: 50px 5%;
+    background-color: hsla(225, 12%, 87%, 0.061);
+    border-radius: 20px 0 20px 0;
+    backdrop-filter: blur(20px);
+    /* filter: blur(30); */
+    /* box-shadow: 2px 2px 20px 5px #143e60; */
+}
+
+.logo {
+    width: 10rem;
+    cursor: pointer;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.menu li a {
+    transition: all 0.3s ease 0s;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.menu li a:hover {
+    color : #f0cd2f;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: transparent;
+    /* font-family: 'Goldman', cursive; */
+    background-color: #ecb01e;
+    color: black;
+    border: none;
+    border-radius: 10px 0 10px 0;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.home_content {
+    padding: 15% 0;
+}
+
+.home_content h1 {
+    font-size: 7.2rem;
+    font-weight: 400;
+    font-family: 'Goldman', cursive;
+    /* color:#57e2e5; */
+}
+
+.home_content h3 {
+    font-weight: 400;
+    font-size: 4rem;
+    font-family: 'Goldman', cursive;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .home_content h1 {
+        font-size: 4rem;
+    }
+
+    .home_content h3 {
+        font-size: 2rem;
+    }
+}
+
+.mobile_btn {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    .header {
+        height: 100%;
+
+    }
+
+    .mobile_btn {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        cursor: pointer;
+        z-index: 100;
+
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: -100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(225, 12%, 87%, 0.061);
+        border-radius: 20px 0 20px 0;
+        backdrop-filter: blur(20px);
+        z-index: 100;
+        transition: left 1s;
+    }
+
+    .active {
+        left: 0;
+    }
+
+    .navbar a {
+        font-size: 2rem;
+    }
+
+
+}

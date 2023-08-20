@@ -1,0 +1,109 @@
+.bg {
+    background: #000300;
+}
+
+.last{
+    background: #01161a;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 20%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.quote {
+    /* padding: 0 15%; */
+    text-align: center;
+    font-size: 1.4rem;
+    /* color: black; */
+}
+
+.contact p {
+    font-size: 1.2rem;
+    padding: 1rem;
+    /* color: black; */
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem;
+    padding: 4rem 0 0 0;
+    justify-content: center;
+    
+}
+
+.contact i {
+    font-size: 4rem;
+    text-align: center;
+    color: #ecb01e;
+}
+
+.address {
+    display: inline-block;
+    text-align:center;
+}
+.email {
+    display: inline-block;
+    text-align:center;
+}
+.phone {
+    display: inline-block;
+    text-align:center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    background: #01161a;
+}
+
+.footer_text p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .last {
+        padding: 2rem 4rem;
+    }
+
+    .last .quote {
+        font-size: 1.2rem
+    }
+    
+    .contact {
+        gap:2rem;
+    }
+
+    .contact p {
+        font-size: 1.2rem; 
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .last, .footer {
+        padding: 2rem 0;
+    }
+
+    .last .quote {
+        font-size: 1rem;
+        padding: 0 3rem;
+    }
+
+    .contact {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .footer_text p {
+        font-size: 1rem;
+    }
+}
